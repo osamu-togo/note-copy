@@ -2,9 +2,69 @@
   box-sizing: border-box;
 }
 
-.header_logo{
-  font-size: 30px;
-  font-weight: bold;
-  height: 64px;
-  background-color: lightgray;
+.header{
+  &_top{
+    height: 64px;
+    background-color: lightgray;
+    &_box{
+      align-items: center;
+      height: 64px;
+      margin-left: 25px;
+      margin-right: 25px;
+      &_logo{
+        font-size: 25px;
+        font-weight: bold;
+        height: 25px;
+        width: 98px;
+      }
+      &_right{
+        width: 240px;
+        height: 40px;
+      }
+    }
+  }
+  &_menu{
+    font-size: 30px;
+    font-weight: bold;
+    height: 102px;
+    background-color: lightpink;
+  }
 }
+
+
+//@import "font-awesome";
+//// @import "font-awesome-sprockets";
+//.side_bar{ 
+  // background-color: #253141;  
+  // height: 100vh;
+  // width: 300px; 
+  // &__user-name{
+  //   background-color: #253141;
+  //   height: 100px;
+  //   width: 300px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   &__name{
+  //     background-color: #253141;
+  //     height: 20px;
+  //     width: 260px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     &__left-name{
+  //       width: 200px;
+  //       line-height: 20px;
+  //       font-weight: bold;
+  //       color: #ffffff;
+  //     }
+  //     &__right-icon{
+  //       width: 60px;
+  //       font-weight: bold;
+  //       display: flex;
+  //       justify-content: flex-end;
+  //       .icon{
+  //         color: white;
+  //         margin-left: 5px;
+          
+  //         font-family: FontAwesome 5 Free; 
+  //       }
