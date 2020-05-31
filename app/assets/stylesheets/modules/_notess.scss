@@ -5,12 +5,14 @@
 .header{
   &_top{
     height: 64px;
-    background-color: lightgray;
     &_box{
+      display: flex;
+      justify-content: space-between;
       align-items: center;
       height: 64px;
-      margin-left: 25px;
-      margin-right: 25px;
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
       &_logo{
         font-size: 25px;
         font-weight: bold;
@@ -24,10 +26,54 @@
     }
   }
   &_menu{
-    font-size: 30px;
-    font-weight: bold;
-    height: 102px;
-    background-color: lightpink;
+    border-bottom: 1px solid lightgray;
+    &_boxx{
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 102px;
+      &_menus{
+        height: 48px;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+        font-size: 20px;
+      }
+      &_catego{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.main{
+  &_boxies{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    &_top{
+      width: 100%;
+      margin-bottom: 16px;
+      height: 79px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+      &_osusume{
+        font-weight: 700;
+        font-size: 20px;
+        
+      }
+    }
+    &_note{
+      display: flex;
+      &_left{
+        width: 610px;
+      }
+      &_riright{
+        margin-left: 46px;
+        width: 290px;
+      }
+    }
   }
 }
 
