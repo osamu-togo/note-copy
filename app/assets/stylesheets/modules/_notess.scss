@@ -22,6 +22,54 @@
       &_right{
         width: 240px;
         height: 40px;
+        display: flex;
+        &_serch{
+          height: 32px;
+          width: 40px;
+          margin-left: 16px;
+          display: flex;
+          align-items: center;
+          &_btn{
+            padding-left: 16px;
+            cursor: pointer;
+            color: rgb(120, 124, 123);
+          }
+        }
+        &_login{
+          height: 32px;
+          width: 80px;
+          margin-left: 16px;
+          display: flex;
+          align-items: center;
+          &_bbtn{
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(120, 124, 123);
+            cursor: pointer;
+            padding-left: 16px;
+          }
+        }
+        &_enter{
+          height: 32px;
+          width: 80px;
+          margin-left: 16px;
+          &_bttn{
+            height: 32px;
+            width: 80px;
+            padding-left: 16px;
+            padding-right: 16px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(44, 182, 150);
+            border-radius: 4px;
+            &_ety{
+              font-size: 12px;
+              font-weight: 600;
+              cursor: pointer;
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
   }
