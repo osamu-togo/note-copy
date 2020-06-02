@@ -69,6 +69,9 @@
               color: #ffffff;
             }
           }
+          &_bttn:hover{
+            background-color: rgb(15, 129, 102);
+          }
         }
       }
     }
@@ -96,6 +99,7 @@
             font-size: 14px;
             cursor: pointer;
             color: rgb(34, 34, 34);
+            font-weight: 500;
           }
         }
         &_bar-two{
@@ -109,6 +113,7 @@
             font-size: 14px;
             cursor: pointer;
             color: rgb(34, 34, 34);
+            font-weight: 500;
           }
         }
       }
