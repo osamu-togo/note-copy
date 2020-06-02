@@ -83,7 +83,34 @@
       &_menus{
         height: 48px;
         border-bottom: 1px solid rgba(0, 0, 0, .05);
-        font-size: 20px;
+        display: flex;
+        justify-content: start;
+        &_bar{
+          height: 48px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+          padding-right: 16px;
+          &_me-one{
+            font-size: 14px;
+            cursor: pointer;
+            color: rgb(34, 34, 34);
+          }
+        }
+        &_bar-two{
+          height: 48px;
+          width: 116px;
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+          padding-right: 16px;
+          &_me-two{
+            font-size: 14px;
+            cursor: pointer;
+            color: rgb(34, 34, 34);
+          }
+        }
       }
       &_catego{
         font-size: 20px;
