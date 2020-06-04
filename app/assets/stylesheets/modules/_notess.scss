@@ -117,8 +117,48 @@
           }
         }
       }
-      &_catego{
-        font-size: 20px;
+
+      &_tag{
+        display: flex;
+        justify-content: start;
+        &_catego{
+          height: 48px;
+          display: flex;
+          justify-content: start;
+          &_catebar{
+            height: 48px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            &_ctg{
+              font-size: 14px;
+              cursor: pointer;
+              color: rgb(120, 124, 123);
+              font-weight: 500;
+            }
+          }
+        }
+        &_catego-right{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          &_catebar-right{
+            height: 48px;
+            width: 116px;
+            display: flex;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            &_ctg-right{
+              font-size: 14px;
+              cursor: pointer;
+              color: rgb(120, 124, 123);
+              font-weight: 500;
+            }
+          }
+        }
       }
     }
   }
