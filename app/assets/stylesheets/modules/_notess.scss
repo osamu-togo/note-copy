@@ -202,6 +202,8 @@
                 margin-bottom: 24px;
                 border: none;
                 border-radius: 4px;
+                background-size: cover;
+                border: 1px solid #f2f2f2;
               }
               &_title{
                 margin-bottom: 8px;
@@ -214,12 +216,79 @@
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 14px;
+                &_like{
+                  color: #ea3f60;
+                  display: flex;
+                  margin-right: 8px;
+                  &_heart{
+                    height: 16px;
+                    width: 16px;
+                    font-size: 14px;
+                    border-radius: 16px;
+                  }
+                  &_count{
+                    margin-left: 4px;
+                  }
+                }
+                &_namebox{
+                  font-size: 12px;
+                  margin-right: 8px;
+                  color: #787c7b;
+                }
               }
             }
           }
           &_second{
             height: 145px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
             border-bottom: 1px solid #e6e6e6;
+            &_itemboxx{
+              cursor: pointer;
+              display: flex;
+              &_lefttext{
+                width: 490px;
+                &_titles{
+                  margin-bottom: 8px;
+                  font-weight: 700;
+                  line-height: 1.5;
+                  letter-spacing: .04em;
+                  font-size: 22px;
+                }
+                &_names{
+                  display: flex;
+                  flex-wrap: wrap;
+                  font-size: 14px;
+                  &_likes{
+                    color: #ea3f60;
+                    display: flex;
+                    margin-right: 8px;
+                    &_hearts{
+                      height: 16px;
+                      width: 16px;
+                      font-size: 14px;
+                      border-radius: 16px;
+                    }
+                    &_counts{
+                      margin-left: 4px;
+                    }
+                  }
+                  &_nameboxes{
+                    font-size: 12px;
+                    margin-right: 8px;
+                    color: #787c7b;
+                  }
+                }
+              }
+              &_phots{
+                width: 104px;
+                height: 104px;
+                margin-left: 16px;
+                background-size: cover;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+              }
+            }
           }
         }
       }
