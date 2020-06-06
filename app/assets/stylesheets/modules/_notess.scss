@@ -214,6 +214,25 @@
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 14px;
+                &_like{
+                  color: #ea3f60;
+                  display: flex;
+                  margin-right: 8px;
+                  &_heart{
+                    height: 16px;
+                    width: 16px;
+                    font-size: 14px;
+                    border-radius: 16px;
+                  }
+                  &_count{
+                    margin-left: 4px;
+                  }
+                }
+                &_namebox{
+                  font-size: 12px;
+                  margin-right: 8px;
+                  color: #787c7b;
+                }
               }
             }
           }
