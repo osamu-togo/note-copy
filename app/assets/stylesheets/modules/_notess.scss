@@ -346,3 +346,29 @@
     }
   }
 }
+
+.signup-main{
+  display: flex;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  &_left{
+    width: 50%;
+    margin-top: 40px;
+    &_welcome{
+      margin-bottom: 16px;
+      font-size: 36px;
+    }
+    &_comment{
+      &_top{
+
+      }
+      &_second{
+
+      }
+    }
+  }
+  &_right{
+  width: 50%
+  }
+}
