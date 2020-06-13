@@ -358,13 +358,18 @@
     &_welcome{
       margin-bottom: 16px;
       font-size: 36px;
+      font-weight: 700;
+      line-height: 54px;
     }
     &_comment{
       &_top{
-
+        font-size: 16px;
+        color: rgb(34, 34, 34);
       }
       &_second{
-
+        font-size: 16px;
+        margin-top: 8px;
+        color: rgb(34, 34, 34);
       }
     }
   }
