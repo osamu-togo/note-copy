@@ -2,18 +2,21 @@
   .header_top
     .header_top_box
       .header_top_box_logo
-        Logo
+        = link_to root_path, class: "header_top_box_logo" do
+          Logo
       .header_top_box_right
         .header_top_box_right_serch
           .header_top_box_right_serch_btn
             = icon('fas', 'search')
         .header_top_box_right_login
           .header_top_box_right_login_bbtn
-            ログイン
+            = link_to new_user_session_path, class: "header_top_box_right_login_bbtn" do
+              ログイン
         .header_top_box_right_enter
           .header_top_box_right_enter_bttn
             .header_top_box_right_enter_bttn_ety
-              新規登録
+              = link_to new_user_registration_path, class: "header_top_box_right_enter_bttn_ety" do
+                新規登録
   .header_menu
     .header_menu_boxx
       .header_menu_boxx_menus
