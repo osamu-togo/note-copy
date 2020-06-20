@@ -11,7 +11,7 @@
               = icon('fas', 'search')
           .header_top_box_right_login
             .header_top_box_right_login_bbtn
-              = link_to new_user_session_path, class: "header_top_box_right_login_bbtn" do
+              = link_to destroy_user_session_path, method: :delete, class: "header_top_box_right_login_bbtn" do
                 ログアウト
           .header_top_box_right_enter
             .header_top_box_right_enter_bttn
