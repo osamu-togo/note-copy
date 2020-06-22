@@ -1,0 +1,8 @@
+.post-main
+  Hamlの投稿画面!!
+  .post-main_boxx
+    .post-main_boxx_formbox
+    = form_with model: @note, url: notes_path, class: :form, local: true do |form|
+      = form.text_field :title, placeholder: :タイトル
+      = form.text_field :text, placeholder: :テキスト
+      = form.submit '投稿する'
