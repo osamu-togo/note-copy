@@ -20,11 +20,12 @@
                     32
                 .main_boxies_note_left_flame_first_itembox_name_namebox
                   name
+
           .main_boxies_note_left_flame_second
             .main_boxies_note_left_flame_second_itemboxx
               .main_boxies_note_left_flame_second_itemboxx_lefttext
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_titles
-                  仮のタイトル入力ですです。
+                  仮のタイトルです。
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_names
                   .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes
                     .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes_hearts
@@ -66,3 +67,18 @@
             .main_boxies_note_riright_sidebar_bbox_pic
             .main_boxies_note_riright_sidebar_bbox_text
               riritext
+
+
+
+
+-# .main_chat
+-#   .main_chat__group-info
+-#     .main_chat__group-info__name
+-#       .main_chat__group-info__name__group-name
+-#         = @group.name
+-#       .main_chat__group-info__name__group-member
+-#         - @group.group_users.each do |group_user|
+-#           = "Member:#{group_user.user.name}"
+-#     .main_chat__group-info__edit
+-#       = link_to edit_group_path(@group), class: "edit__btn" do
+-#         Edit
