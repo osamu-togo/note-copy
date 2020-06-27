@@ -423,13 +423,49 @@
   margin: 0 auto;
   &_boxx{
     width: 100%;
+    &_postcomment{
+      width: 400px;
+      margin: 10px auto;
+      &_title{
+        width: 100px;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+    }
     &_formbox{
-      width: 360px;
+      width: 400px;
       margin: 0 auto;
       padding: 24px;
       border: 1px solid #e6e6e6;
       background-color: #ffffff;
       border-radius: 4px;
+      &_inputbox{
+        display: flex;
+        &_post-form{
+          width: 320px;
+        }
+        &_post-text{
+          width: 100px;
+        }
+        &_post-submit{
+          width: 100px;
+        }
+      }
     }
   }
+}
+
+#note_title{
+  width: 350px;
+  height: 42px;
+  margin: 10px 0px;
+}
+#note_text{
+  width: 350px;
+  height: 300px;
+  margin: 10px 0px;
+}
+#note_submit{
+  width: 350px;
+  margin: 10px 0px;
 }

@@ -1,7 +1,14 @@
 .post-main
   .post-main_boxx
+    .post-main_boxx_postcomment
+      .post-main_boxx_postcomment_title
+        投 稿 画 面
     .post-main_boxx_formbox
-      = form_with model: @note, url: notes_path, class: :form, local: true do |form|
-        = form.text_field :title, placeholder: :タイトル
-        = form.text_field :text, placeholder: :テキスト
-        = form.submit '投稿する'
+      .post-main_boxx_formbox_inputbox
+        = form_with model: @note, url: notes_path, class: :form, local: true do |form|
+          .post-main_boxx_formbox_inputbox_post-form
+            = form.text_field :title, placeholder: :タイトル
+          .post-main_boxx_formbox_inputbox_post-text
+            = form.text_field :text, placeholder: :テキスト
+          .post-main_boxx_formbox_inputbox_post-submit
+            = form.submit '投稿する', id: 'note_submit'
