@@ -22,10 +22,11 @@
                   name
 
           .main_boxies_note_left_flame_second
+          - @notes.each do |note|
             .main_boxies_note_left_flame_second_itemboxx
               .main_boxies_note_left_flame_second_itemboxx_lefttext
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_titles
-                  仮のタイトルです
+                  = note.title
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_names
                   .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes
                     .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes_hearts
@@ -67,4 +68,15 @@
             .main_boxies_note_riright_sidebar_bbox_pic
             .main_boxies_note_riright_sidebar_bbox_text
               riritext
+
+
+
+    -# .side_bar__group-lists
+    -# - current_user.groups.each do |group|
+    -#   .side_bar__group-lists__list
+    -#     = link_to group_messages_path(group) do
+    -#       .side_bar__group-lists__list__group-name
+    -#         = group.name
+    -#       .side_bar__group-lists__list__group-message
+    -#         = group.show_last_message
 
