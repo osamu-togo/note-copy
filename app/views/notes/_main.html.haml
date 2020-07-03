@@ -21,27 +21,12 @@
                 .main_boxies_note_left_flame_first_itembox_name_namebox
                   name
 
+        - @notes.each do |note|
           .main_boxies_note_left_flame_second
-          - @notes.each do |note|
             .main_boxies_note_left_flame_second_itemboxx
               .main_boxies_note_left_flame_second_itemboxx_lefttext
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_titles
                   = note.title
-                .main_boxies_note_left_flame_second_itemboxx_lefttext_names
-                  .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes
-                    .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes_hearts
-                      = icon('far', 'heart')
-                    .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes_counts
-                      12
-                  .main_boxies_note_left_flame_second_itemboxx_lefttext_names_nameboxes
-                    name
-              .main_boxies_note_left_flame_second_itemboxx_phots
-
-          .main_boxies_note_left_flame_second
-            .main_boxies_note_left_flame_second_itemboxx
-              .main_boxies_note_left_flame_second_itemboxx_lefttext
-                .main_boxies_note_left_flame_second_itemboxx_lefttext_titles
-                  仮のタイトル入力ですです。二個目。
                 .main_boxies_note_left_flame_second_itemboxx_lefttext_names
                   .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes
                     .main_boxies_note_left_flame_second_itemboxx_lefttext_names_likes_hearts
