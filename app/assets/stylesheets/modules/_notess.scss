@@ -218,6 +218,8 @@
                 line-height: 1.5;
                 letter-spacing: .04em;
                 font-size: 22px;
+                text-decoration: none;
+                color: #000000;
               }
               &_name{
                 display: flex;
@@ -261,6 +263,8 @@
                   line-height: 1.5;
                   letter-spacing: .04em;
                   font-size: 22px;
+                  text-decoration: none;
+                  color: #000000;
                 }
                 &_names{
                   display: flex;
@@ -468,4 +472,9 @@
 #note_submit{
   width: 350px;
   margin: 10px 0px;
+}
+
+.links{
+  text-decoration: none;
+  color: #000000;
 }
