@@ -12,6 +12,10 @@ class NotesController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @note = Note.find(params[:id])
+  end
+
   private
   def post_params
     params.require(:note).permit(:title, :text).merge(user_id: current_user.id)
