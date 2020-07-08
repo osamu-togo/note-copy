@@ -463,6 +463,7 @@
   &_main{
     width: 100%;
     margin-top: 48px;
+    margin-bottom: 48px;
     &_center{
       margin: 0 auto;
       width: 620px;
@@ -476,7 +477,9 @@
         height: 48px;
         margin-top: 72px;
         margin-bottom: 18px;
-        background-color: rgb(15, 129, 102);
+        //background-color: rgb(15, 129, 102);
+        font-size: 32px;
+        font-weight: 700;
       }
       &_likebox{
         width: 100%;
@@ -488,12 +491,14 @@
         width: 100%;
         height: 36px;
         margin-bottom: 16px;
-        background-color: rgb(15, 129, 102);
+        //background-color: rgb(15, 129, 102);
       }
       &_textbox{
         width: 100%;
         height: 100px;
-        background-color: rgb(15, 129, 102);
+        font-size: 18px;
+        line-height: 36px;
+        //background-color: rgb(15, 129, 102);
       }
     }
   }
