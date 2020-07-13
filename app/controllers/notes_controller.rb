@@ -1,14 +1,16 @@
 class NotesController < ApplicationController
   def index
     @notes = Note.all
+    @image = Image.all
   end
 
   def new
     @note = Note.new
+    @note.images.new
   end
 
   def create
-    Note.create(post_params)
+    @note = Note.create(post_params)
     redirect_to root_path
   end
 
@@ -18,6 +20,8 @@ class NotesController < ApplicationController
 
   private
   def post_params
-    params.require(:note).permit(:title, :text).merge(user_id: current_user.id)
+    params.require(:note).permit(:title, :text, images_attributes: [:image]).merge(user_id: current_user.id)
   end
+
+  
 end
