@@ -1,7 +1,7 @@
 class NotesController < ApplicationController
   def index
     @notes = Note.all
-    @image = Image.all
+    @images = Image.all
   end
 
   def new

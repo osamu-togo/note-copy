@@ -36,6 +36,8 @@
                   .main_boxies_note_left_flame_second_itemboxx_lefttext_names_nameboxes
                     = note.user.name
               .main_boxies_note_left_flame_second_itemboxx_phots
+                - @images.each do |image|
+                  = image.image
 
       .main_boxies_note_riright
         .main_boxies_note_riright_sidebar
@@ -64,4 +66,12 @@
     -#         = group.name
     -#       .side_bar__group-lists__list__group-message
     -#         = group.show_last_message
+
+        -# - @item.images.first(1).each do |image| 
+        -#   .itemzone__content__photo__box
+        -#     = image_tag "#{image.url}", class: "itemzone__content__photo__box__top", alt:"logo"
+        
+        -#   .itemzone__content__photo__box__bar
+        -#     - @item.images.first(6).each do |image| 
+        -#       = image_tag "#{image.url}", class: "itemzone__content__photo__box__bar__sub", alt:"logo"
 
