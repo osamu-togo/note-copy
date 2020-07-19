@@ -12,6 +12,6 @@
             = form.text_field :text, placeholder: :テキスト
           .post-main_boxx_formbox_inputbox_post-text
             = form.fields_for :images, @note.images.build do |image|
-              = image.file_field :image
+              = images.file_field :image
           .post-main_boxx_formbox_inputbox_post-submit
             = form.submit '投稿する', id: 'note_submit'
