@@ -2,7 +2,7 @@
   .main_boxies
     .main_boxies_top
       .main_boxies_top_osusume
-        編集部のおすすめ
+        おすすめレシピ
     .main_boxies_note
       .main_boxies_note_left
         .main_boxies_note_left_flame
@@ -39,39 +39,24 @@
                 - @images.each do |image|
                   = image.image
 
-      .main_boxies_note_riright
-        .main_boxies_note_riright_sidebar
-          .main_boxies_note_riright_sidebar_bbox
-            .main_boxies_note_riright_sidebar_bbox_pic
-            .main_boxies_note_riright_sidebar_bbox_text
-              riritext
+      -# .main_boxies_note_riright
+      -#   .main_boxies_note_riright_sidebar
+      -#     .main_boxies_note_riright_sidebar_bbox
+      -#       .main_boxies_note_riright_sidebar_bbox_pic
+      -#       .main_boxies_note_riright_sidebar_bbox_text
+      -#         riritext
 
-          .main_boxies_note_riright_sidebar_bbox
-            .main_boxies_note_riright_sidebar_bbox_pic
-            .main_boxies_note_riright_sidebar_bbox_text
-              riritext
+      -#     .main_boxies_note_riright_sidebar_bbox
+      -#       .main_boxies_note_riright_sidebar_bbox_pic
+      -#       .main_boxies_note_riright_sidebar_bbox_text
+      -#         riritext
               
-          .main_boxies_note_riright_sidebar_bbox
-            .main_boxies_note_riright_sidebar_bbox_pic
-            .main_boxies_note_riright_sidebar_bbox_text
-              riritext
+      -#     .main_boxies_note_riright_sidebar_bbox
+      -#       .main_boxies_note_riright_sidebar_bbox_pic
+      -#       .main_boxies_note_riright_sidebar_bbox_text
+      -#         riritext
 
 
 
-    -# .side_bar__group-lists
-    -# - current_user.groups.each do |group|
-    -#   .side_bar__group-lists__list
-    -#     = link_to group_messages_path(group) do
-    -#       .side_bar__group-lists__list__group-name
-    -#         = group.name
-    -#       .side_bar__group-lists__list__group-message
-    -#         = group.show_last_message
 
-        -# - @item.images.first(1).each do |image| 
-        -#   .itemzone__content__photo__box
-        -#     = image_tag "#{image.url}", class: "itemzone__content__photo__box__top", alt:"logo"
-        
-        -#   .itemzone__content__photo__box__bar
-        -#     - @item.images.first(6).each do |image| 
-        -#       = image_tag "#{image.url}", class: "itemzone__content__photo__box__bar__sub", alt:"logo"
 
